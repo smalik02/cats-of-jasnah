@@ -178,10 +178,10 @@ var make_cats = function() {
   }
 }
 
-const sound = function(s) {
-  var snd = new Audio(s + '.mp3')
-  snd.play()
-}
+// const sound = function(s) {
+//   var snd = new Audio(s + '.mp3')
+//   snd.play()
+// }
 
 $('body').keyup(function(e) {
   if (!/\d/.test(e.key)) return

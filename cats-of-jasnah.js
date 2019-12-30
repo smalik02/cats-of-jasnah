@@ -94,6 +94,7 @@ const speak = function(text, opts) {
   console.log('hello world!');
   console.log(msg);
   msg.onend = function(e) {
+    console.log(e);
     console.log('Finished in ' + event.elapsedTime + ' seconds.');
   };
 

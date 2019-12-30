@@ -99,7 +99,7 @@ const speak = function(text, opts) {
     console.log('Finished in ' + event.elapsedTime + ' seconds.');
   };
 
-//   synth.speak(msg);
+  synth.speak(msg);
 }
 
 var make_cats = function() {

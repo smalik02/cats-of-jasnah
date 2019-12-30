@@ -94,10 +94,11 @@ const speak = function(text, opts) {
   msg.lang = 'ur';
   console.log('hello world!');
   console.log(msg);
-  msg.onend = function(e) {
-    console.log(e);
-    console.log('Finished in ' + event.elapsedTime + ' seconds.');
-  };
+  console.log(synth);
+//   msg.onend = function(e) {
+//     console.log(e);
+//     console.log('Finished in ' + event.elapsedTime + ' seconds.');
+//   };
 
   synth.speak(msg);
 }

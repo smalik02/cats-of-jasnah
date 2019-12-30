@@ -91,7 +91,7 @@ const speak = function(text, opts) {
   msg.pitch = 2; //0 to 2
   msg.text = text;
   msg.lang = 'ur-PK';
-
+  console.log('hello world!');
   msg.onend = function(e) {
     console.log('Finished in ' + event.elapsedTime + ' seconds.');
   };

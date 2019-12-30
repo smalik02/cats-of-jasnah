@@ -84,14 +84,15 @@ const speak = function(text, opts) {
 //   responsiveVoice.speak(text, 'US English Female', opts)
   var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
-  msg.voice = voices[10]; // Note: some voices don't support altering params
-  msg.voiceURI = 'native';
-  msg.volume = 1; // 0 to 1
-  msg.rate = 1; // 0.1 to 10
-  msg.pitch = 2; //0 to 2
+//   msg.voice = voices[10]; // Note: some voices don't support altering params
+//   msg.voiceURI = 'native';
+//   msg.volume = 1; // 0 to 1
+//   msg.rate = 1; // 0.1 to 10
+//   msg.pitch = 2; //0 to 2
   msg.text = text;
-  msg.lang = 'ur-PK';
+  msg.lang = 'ur';
   console.log('hello world!');
+  console.log(msg);
   msg.onend = function(e) {
     console.log('Finished in ' + event.elapsedTime + ' seconds.');
   };

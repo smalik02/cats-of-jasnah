@@ -84,6 +84,7 @@ const speak = function(text, opts) {
 //   responsiveVoice.speak(text, 'US English Female', opts)
   var audio = new Audio()
   audio.src =`http://translate.google.com/translate_tts?ie=utf-8&tl=ur&q=${text}`
+  console.log(audio.src);
   audio.play();
 }
 
